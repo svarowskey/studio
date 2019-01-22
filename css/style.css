@@ -72,9 +72,8 @@ header .header .logo-block span {
 h2.top-title {
     font-size: 30px;
     color: #0188cc;
-    font-family: pneb;
+    font-family: "Comic Sans MS";
     text-transform: uppercase;
-    display: flex;
     line-height: 1;
     text-align: center;
     width: 230px;
