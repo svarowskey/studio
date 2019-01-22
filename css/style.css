@@ -57,15 +57,28 @@ header .header {
     padding-bottom: 18px
 }
 header .header .logo-block {
-    width: 524px
+    width: 524px;
+    display: flex;
 }
 header .header .logo-block img {
     margin-right: 28px
 }
 header .header .logo-block span {
     font-size: 19px;
-    display: block;
-    margin-bottom: -5px
+    display: flex;
+    margin-bottom: -5px;
+    align-self: center;
+}
+h2.top-title {
+    font-size: 30px;
+    color: #0188cc;
+    font-family: pneb;
+    text-transform: uppercase;
+    display: flex;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 0;
+    width: 230px;
 }
 header .header .contacts .tel-block {
     margin-right: 28px;
