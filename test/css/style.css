@@ -226,6 +226,10 @@ main .calculate .calculate-body .calculate-field-phone {
 main .calculate .calculate-body .calculate-field-price {
     justify-content: flex-end;
 }
+main .calculate .calculate-body form .container {
+    margin: 0 -29px;
+    padding: 0;
+}
 main .calculate .calculate-body form div {
     display: -webkit-box;
     display: -webkit-flex;
@@ -259,6 +263,11 @@ main .calculate .calculate-body form div input {
     font-size: 20px;
     color: #033;
     text-align: center
+}
+@media (max-width: 400px) {
+    main .calculate .calculate-body form div input {
+        width: 90px;
+    }
 }
 main .calculate .calculate-body form div #square {
     width: 90px;
@@ -297,6 +306,14 @@ main .calculate .calculate-body form button {
     text-transform: uppercase;
     font-family: pnb;
     margin: 0 auto 20px;
+}
+@media (max-width: 400px){
+    main .calculate .calculate-body form div {
+        margin: 0;
+    }
+    main .calculate .calculate-body form button {
+        width: 100%;
+    }
 }
 main .calculate .calculate-body form button:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(#f6d30c), to(#ffe937));
