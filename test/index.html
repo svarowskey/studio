@@ -126,14 +126,32 @@
 							<form action="" method="post">
 								<input type="hidden" class="type" value="calculate" name="type">
 								<div class="row">
-									<div class="col-lg-4 col-md-6 col-sm-12"><label for="square">Общая площадь потолка (м2):</label><input name="square" type="text" id="square" required value=10></div>
-									<div class="col-lg-4 col-md-6 col-sm-12"><label for="corners">Кол-во углов:</label><input type="text" name="corners" id="corners" required value=0></div>
-									<div class="col-lg-4 col-md-6 col-sm-12"><label for="chandeliers">Люстры:</label><input type="text" name="chandeliers" id="chandeliers" required value=0></div>
-									<div class="col-lg-4 col-md-6 col-sm-12"><label for="dotLamps">Точечные светильники:</label><input type="text" name="dotLamps" id="dotLamps" required value=0></div>
-									<div class="col-lg-4 col-md-6 col-sm-12"><label for="pipes">Количество труб:</label><input type="text" name="pipes" id="pipes" required value=0></div>
-									<div class="col-md-12 calculate-field-phone"><label for="phone">Ваш телефон:</label><input type="text" id="phone" name="tel" required class="tel" maxlength="12" placeholder="+7(000)-000-00-00"></div>
+									<div class="col-lg-4 col-md-6 col-sm-12">
+										<label for="square">Общая площадь потолка (м2):</label>
+										<input name="square" type="text" id="square" required value=10 class="calculate-field">
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12">
+										<label for="corners">Кол-во углов:</label>
+										<input type="text" name="corners" id="corners" required value=0 class="calculate-field">
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12">
+										<label for="chandeliers">Люстры:</label>
+										<input type="text" name="chandeliers" id="chandeliers" required value=0 class="calculate-field">
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12">
+										<label for="dotLamps">Точечные светильники:</label>
+										<input type="text" name="dotLamps" id="dotLamps" required value=0 class="calculate-field">
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12">
+										<label for="pipes">Количество труб:</label>
+										<input type="text" name="pipes" id="pipes" required value=0 class="calculate-field">
+									</div>
+									<div class="col-md-12 calculate-field-phone">
+										<label for="phone">Ваш телефон:</label>
+										<input type="text" id="phone" name="tel" required class="tel" maxlength="12" placeholder="+7(000)-000-00-00">
+									</div>
 								</div>
-								<div class="">Сумма: <h3 id="price"></h3></div>
+								<div class="row calculate-field-price">Сумма: <h3 id="price"></h3></div>
 								<p>Наш специалист свяжется с вами и договорится об удобном времени замера и консультации</p>
 								<button>Оставить заявку</button>
 							</form>

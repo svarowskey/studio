@@ -1,19 +1,10 @@
 $(function() {
-	$('#square').keyup(function(){
+	$('.calculate-field').keyup(function(){
+        if (this.value.match(/[^0-9]/g)) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        }
         document.getElementById('price').textContent = calcCost();
 	});
-    $('#chandeliers').keyup(function(){
-        document.getElementById('price').textContent = calcCost();
-    });
-    $('#dotLamps').keyup(function(){
-        document.getElementById('price').textContent = calcCost();
-    });
-    $('#pipes').keyup(function(){
-        document.getElementById('price').textContent = calcCost();
-    });
-    $('#corners').keyup(function(){
-        document.getElementById('price').textContent = calcCost();
-    });
 
     function calcCost() {
         var square = $('#square').val();

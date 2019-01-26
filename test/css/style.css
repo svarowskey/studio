@@ -223,6 +223,9 @@ main .calculate .calculate-body form {
 main .calculate .calculate-body .calculate-field-phone {
     justify-content: center;
 }
+main .calculate .calculate-body .calculate-field-price {
+    justify-content: flex-end;
+}
 main .calculate .calculate-body form div {
     display: -webkit-box;
     display: -webkit-flex;
@@ -263,7 +266,7 @@ main .calculate .calculate-body form div #square {
 }
 main .calculate .calculate-body form div #price {
     width: 154px;
-    margin-left: auto
+    margin-left: 20px;
 }
 main .calculate .calculate-body form div #phone {
     width: 170px;
