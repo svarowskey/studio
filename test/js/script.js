@@ -1,4 +1,12 @@
 $(function() {
+	if (performance.navigation.type == 1) {
+        document.getElementById('square').value = '';
+        document.getElementById('corners').value = '';
+        document.getElementById('chandeliers').value = '';
+        document.getElementById('dotLamps').value = '';
+        document.getElementById('pipes').value = '';
+	}
+
 	$('.calculate-field').keyup(function(){
         if (this.value.match(/[^0-9]/g)) {
             this.value = this.value.replace(/[^0-9]/g, '');
