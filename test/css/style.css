@@ -118,7 +118,7 @@ header .header .contacts button:hover {
     background: linear-gradient(180deg, #0188cc 0, #69b9e1 100%)
 }
 header nav {
-    background: #3f4955;
+    background: #5590fb;
     padding: 6px 0;
     width: 100%
 }
@@ -190,7 +190,7 @@ main .first-block .h1-block span {
     margin-bottom: 16px
 }
 main .container-calc {
-    background-color: #2d343c;
+    background: #1d69fe;
 }
 main .calculate {
     width: 100%;
@@ -1783,4 +1783,13 @@ img.zoom {
 }
 .item-img-wrap {
     overflow: hidden;
+}
+.sl-image {
+    background-color: white;
+    border: 2px solid #a1a1a1;
+    padding: 20px;
+    border-radius: 20px;
+}
+.sl-overlay {
+    background: #adadad;
 }
