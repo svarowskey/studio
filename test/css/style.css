@@ -57,8 +57,8 @@ header .header {
     padding-bottom: 18px
 }
 header .header .logo-block {
-    width: 524px;
     display: flex;
+    flex-grow: 1;
 }
 header .header .logo-block img {
     margin-right: 28px
@@ -80,8 +80,8 @@ h2.top-title {
     margin: auto;
 }
 header .header .contacts .tel-block {
-    margin-right: 28px;
-    margin-bottom: -5px
+    margin: auto;
+    text-align: right;
 }
 header .header .contacts .tel-block img {
     margin-right: 13px
@@ -410,7 +410,8 @@ main .kinds .grid {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    flex-wrap: wrap;
 }
 main .kinds .grid .item {
     width: 280px;
@@ -1051,9 +1052,9 @@ footer a img {
         -ms-flex-pack: space-evenly;
         justify-content: space-evenly
     }
-    main .kinds .grid .item3 {
-        margin-top: 50px
-    }
+    /*main .kinds .grid .item3 {*/
+        /*margin-top: 50px*/
+    /*}*/
     main .texnology .grid {
         grid-template-columns: repeat(2, 250px);
         -webkit-box-pack: center;
@@ -1724,26 +1725,26 @@ img.zoom {
 .fa-vk {
     color: #4c75a3;
 }
-.fa-vk:hover {
-    color: lightgray;
-}
 .fa-facebook {
     color: #3b5999;
 }
-.fa-facebook:hover {
-    color: lightgray;
-}
-.fa-at {
-    color: #ff3300;
-}
-.fa-at:hover {
-    color: lightgray;
+.fa-instagram {
+    color: #bc2a8d;
 }
 .fa-odnoklassniki-square {
     color: #f57d00;
 }
-.fa-odnoklassniki-square:hover {
-    color: lightgray;
+.fa-whatsapp {
+    color: #40c351;
+}
+.fa-viber {
+    color: #8f5db7;
+}
+.socials a:hover {
+    background: gray;
+}
+.socials a:hover .socials-link {
+    color: white;
 }
 .container .gallery {
     width: 100%;
@@ -1792,4 +1793,26 @@ img.zoom {
 }
 .sl-overlay {
     background: #adadad;
+}
+.header-middle {
+    flex-grow: 1;
+}
+.header-tel {
+    text-align: center;
+    margin-bottom: 6px;
+}
+.header-middle .socials {
+    border: 2px solid gray;
+    border-radius: 8px;
+    display: flex;
+}
+.header-middle .header-socials-item {
+    flex-grow: 1;
+    text-align: center;
+}
+.header-contacts {
+    flex-grow: 1;
+}
+main .kinds .grid .item {
+    margin: 10px 0 10px;
 }
