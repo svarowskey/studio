@@ -50,7 +50,7 @@ $(function() {
 	        }); 			
 		}
 
-        myPlacemark = new ymaps.Placemark([54.982156, 73.321976], {
+        myPlacemark = new ymaps.Placemark([54.982400, 73.323485], {
             hintContent: 'Омск',
             balloonContent: 'г. Омск, ул. 70 Лет Октября, д. 20'
         });
