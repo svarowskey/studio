@@ -114,6 +114,7 @@
 				    </button>
 					<div class="col-12 d-md-flex justify-content-between align-items-center collapse" id="navbarToggleExternalContent">
 						<a class="smoothScroll" href=".types">Виды потолков</a>
+						<a class="smoothScroll" href=".design">Дизайн потолков</a>
 						<!--<a class="smoothScroll" href=".texnology">Технологии потолков</a>-->
 						<a class="smoothScroll" href=".ask">Ответы на вопросы</a>
 						<a class="smoothScroll" href=".reviews">Отзывы</a>
@@ -381,19 +382,31 @@
 		</div>
 
 		<!--Дизайн натяжных потолков-->
-		<div class="container-fluid">
+		<div class="design container-fluid">
 			<div class="row">
-				<div class="slider-viewport">
-					<ul data-current="0" class="slider-wrapper">
-						<li class="slide">slide-content 1</li>
-						<li class="slide">slide-content 2</li>
-						<li class="slide">slide-content 3</li>
-						<li class="slide">slide-content 4</li>
-						<li class="slide">slide-content 5</li>
-						<li class="slide">slide-content 6</li>
-						<li class="slide">slide-content 7</li>
-						<li class="slide">slide-content 8</li>
-					</ul>
+				<div id="slider" class="slider">
+					<ol class="slider__indicators">
+						<li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+						<li class="slider__indicator" data-slide-to="1"></li>
+						<li class="slider__indicator" data-slide-to="2"></li>
+						<li class="slider__indicator" data-slide-to="3"></li>
+					</ol>
+					<div class="slider__items">
+						<div class="slider__item slider__item_active">
+							<div class="slide1">slide1</div>
+						</div>
+						<div class="slider__item">
+							<div class="slide2">slide2</div>
+						</div>
+						<div class="slider__item">
+							<div class="slide3">slide3</div>
+						</div>
+						<div class="slider__item">
+							<div class="slide4">slide4</div>
+						</div>
+					</div>
+					<a href="#" class="slider__control slider__control_prev" role="button"></a>
+					<a href="#" class="slider__control slider__control_next" role="button"></a>
 				</div>
 			</div>
 		</div>
@@ -499,6 +512,7 @@
 			<!--</div>-->
 		<!--</div>-->
 
+		<!--Часто задаваемые вопросы-->
 		<div class="ask container-fluid">
 			<div class="container">
 				<div class="row">
@@ -541,6 +555,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!--Отзывы-->
 		<div class="reviews container">
 			<div class="row">
 				<div class="col-12">
@@ -565,6 +581,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!--Оставить заявку-->
 		<div class="call wow fadeInUp" data-wow-duration="2s">
 			<div class="container">
 				<div class="row">
@@ -576,6 +594,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!--Карта-->
 		<div id="map">
 			<div class="container">
 				<div class="row">
@@ -593,6 +613,8 @@
 			</div>
 		</div>
 	</main>
+
+	<!--Футер-->
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -680,33 +702,93 @@
                     console.log(e);
                 });
 
-            var sliderWidth = 300; //Ширина одного слайда
-			var slideTimer; //Интервал смены кадров
 
-            /**Устанавливаем ширину списка
-			 * равную произведению ширины одного слайда на общее кол-во слайдов
-			 * чтобы он вытянулся в одну строку
-             */
-            $('.slider-wrapper').width($('.slider-wrapper').children().length * sliderWidth);
-            /**
-			 * Задаем временной интервал
-             */
-            slideTimer = setInterval(nextSlide, 1000);
+            /** Слайдер */
 
-            /** Функция, сменяющая слайды каждую секунду*/
-            function nextSlide() {
-				var currentSlide = parseInt($('.slider-wrapper').data('current')); //Определяем текущий слайд
-				currentSlide++; //Увеличиваем его значение
-				if (currentSlide >= $('.slider-wrapper').children().length){ //Перематываем к началу, если слайд последний
-					currentSlide = 0;
-				}
-				/** Передвигаем список и сохраняем значение текущего слайда*/
-				$('.slider-wrapper').animate({left: -currentSlide*sliderWidth},300).data('current', currentSlide);
-            }
+            var slider = (function (config) {
+				const ClassName = {
+				    INDICATOR_ACTIVE: 'slider__indicator_active',
+					ITEM: 'slider_item',
+					ITEM_LEFT: 'slider__item_left',
+					ITEM_RIGHT: 'slider__item_right',
+					ITEM_NEXT: 'slider__item_next',
+					ITEM_PREV: 'slider__item_prev',
+					ITEM_ACTIVE: 'slider__item_active'
+				};
 
-            /**
-			 * http://www.cat-in-web.ru/samyj-prostoj-slajder-na-jquery/
-             */
+				var
+					_isSliding = false, // индикация процесса смены слайда
+					_interval = 0, // числовой идентификатор таймера
+					_transitionDuration = 700, // Длительность перехода
+					_skuder = {}, // DOM элемент слайдера
+					_items = {}, // .slider-item (массив слайдов)
+					_sliderIndicators = {}, // [data-slide-to] (индикаторы)
+					_config = {
+				    	selector: '', // селектор слайдера
+						isCycling: true, // автоматическая смена слайдов
+						direction : 'next', // направление смены слайдов
+						interval: 5000, // интервал между автоматической сменой слайдов
+						pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+					};
+
+				var
+					// Функция для получения порядкового индекса элемента
+					_getItemIndex = function (_currentItem) {
+						var result;
+						_items.forEach(function (item, index) {
+							if (item === _currentItem) {
+							    result = index;
+							}
+                        });
+						return result;
+                    },
+
+                    // Функция для подсветки активного индикатора
+					_setActiveIndicator = function (_activeIndex, _targetIndex) {
+						if (_sliderIndicators.length !== _items.length) return
+						_sliderIndicators[_activeIndex].classList.remove(ClassName.INDICATOR_ACTIVE);
+						_sliderIndicators[_targetIndex].classList.add(ClassName.INDICATOR_ACTIVE);
+                    },
+
+					// Функция для смены слайда
+					_slide = function (direction, activeItemIndex, targetItemIndex) {
+						var
+							directionalClassName = ClassName.ITEM_RIGHT,
+							orderClassName = ClassName.ITEM_PREV,
+							activeItem = _items[activeItemIndex], // текущий элемент
+							targetItem = _items[targetItemIndex]; // следующий элемент
+
+						var _slideEndTransition = function () {
+							activeItem.classList.remove(ClassName.ITEM_ACTIVE);
+							activeItem.classList.remove(directionalClassName);
+							targetItem.classList.remove(orderClassName);
+							targetItem.classList.remove(directionalClassName);
+							targetItem.classList.add(ClassName.ITEM_ACTIVE);
+							window.setTimeout(function () {
+								if (_config.isCycling) {
+								    clearInterval(_interval);
+
+								}
+                            })
+                        },
+
+						// Функция для перехода к предыдущему слайду
+						// _slideTo = function(direction) {
+						//     var
+						// 		activeItem =
+						// },
+
+						//Функция для запуска автоматической смены слайдов в указанном направлении
+						_cycle = function () {
+							if (_config.isCycling) {
+							    _interval = window.setInterval(function () {
+
+                                })
+							}
+                        }
+                    }
+
+            })
         });
     </script>
   </body>
