@@ -2139,6 +2139,7 @@ main .kinds .grid .item {
 
 .design {
     padding: 40px 0;
+    padding: 0 15px;
 }
 
 .slide1 {
