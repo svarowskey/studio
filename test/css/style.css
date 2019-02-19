@@ -143,13 +143,13 @@ header .header .contacts button:hover {
 }
 
 header nav {
-    background: #5590fb;
-    padding: 6px 0;
+    background: #1d82bd;
     width: 100%
 }
 
 header nav a {
-    color: #fff
+    color: #fff;
+    padding: 4px 30px;
 }
 
 header nav a:hover {
@@ -226,7 +226,7 @@ main .first-block .h1-block span {
 }
 
 main .container-calc {
-    background: #1d69fe;
+    background: #1d82bd;
 }
 
 main .calculate {
@@ -895,8 +895,8 @@ main .ask button:hover {
 }
 
 main .reviews {
-    padding-top: 85px;
-    padding-bottom: 65px
+    padding: 65px 0;
+    overflow: hidden;
 }
 
 main .reviews h2 {
@@ -2142,176 +2142,88 @@ main .kinds .grid .item {
     padding: 0 15px;
 }
 
-.slide1 {
-    background: orange;
-    width: 100%;
-    height: 400px;
+.slick-track {
+    height: 260px;
 }
-
-.slide2 {
-    background: green;
-    width: 100%;
-    height: 400px;
+.slick-controls {
+    z-index: 99;
 }
-
-.slide3 {
-    background: blue;
-    width: 100%;
-    height: 400px;
+.slick-slide:focus {
+    outline: 0 !important;
 }
-
-.slide4 {
-    background: red;
-    width: 100%;
-    height: 400px;
+.slick-initialized .slick-slide,
+.slick-slide.slick-current.slick-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.slider {
-    /*Устанавливаем относительное позиционирование элементу*/
-    position: relative;
-    width: 100%;
+.slick-initialized .slick-slide .reviews_slider_container {
+    padding: 20px;
+    box-shadow: 0 0 10px 0;
+    display: flex;
+    max-width: 840px;
+    border-radius: 10px;
+    align-items: center;
 }
-
-.slider__items {
-    /*Устанавливаем относительное позиционирование элементу*/
-    position: relative;
-    /*Устанаваливаем элементу ширину, равную 100%*/
-    width: 100%;
-    overflow: hidden;
-    height: 400px;
+.reviews_slider_container_text {
+    margin-left: 40px;
+    flex-shrink: 3;
 }
-
-.slider__item {
-    /*Устанавливаем относительное позиционирование элементу*/
-    position: relative;
-    /*Отключаем по умолчанию отображение всех слайдов*/
-    display: none;
-    /*Устанавливаем элементу ширину, равную 100%*/
-    width: 100%;
-    /*Длительность трансформации*/
-    transition: transform .6s ease;
-    /*Не показывать обратную сторону трансформируемого элемента*/
-    backface-visibility: hidden;
-}
-
-.slider__item_active,
-.slider__item_next,
-.slider__item_prev {
-    /*Отображаем слайд, если он имеет один из этих классов*/
+.reviews .reviews_slider_container .reviews_slider_container_comment {
     display: block;
+    text-align: justify;
 }
-
-.slider__item_next,
-.slider__item_prev {
-    /*Устанавливаем абсолютное позиционирование для лемента, на который будет сменяться слайд (на время трансформации)*/
-    position: absolute;
-    /*Устанавливаем положение эдемента, т.е. координату top*/
-    top: 0;
+.slick-initialized .slick-slide .reviews_slider_container img {
+    display: block;
+    border-radius: 50%;
+    flex-shrink: 1;
 }
-
-.slider__item_next.slider__item_left,
-.slider__item_prev.slider__item_right {
-    /*Сдвигаем элемент на 0 по горизонтали*/
-    transform: translateX(0);
-}
-
-.slider__item_next,
-.slider__item_right.slider__item_active {
-    /*Сдвигаем элемент на 100% по горизонтали*/
-    transform: translateX(100%);
-}
-
-.slider__item_prev,
-.slider__item_left.slider__item_active {
-    /*Сдвигаем элемент на -100% по горизонтали*/
-    transform: translateX(-100%);
-}
-
-/*Элементы управления (назад и вперёд) слайдером*/
-
-.slider__control {
+.slick-controls {
+    cursor: pointer;
     position: absolute;
     top: 0;
     bottom: 0;
     display: flex;
-    color: #fff;
-    width: 15%;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    opacity: .5;
-}
-.slider__control:hover,
-.slider__control:focus {
-    color: #ffffff;
-    text-decoration: none;
-    opacity: .9;
-}
-.slider__control::before {
+    align-items: center;
+    width: 15%;
+    color: white;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    opacity: .3; }
+
+.slick-controls::before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 12%;
+    height: 12%;
+    border-radius: 3px 0 0 3px;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
-}
-.slider__control_prev {
-    left: 0;
-}
-.slider__control_next {
-    right: 0;
-}
-.slider__control_prev::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-.slider__control_next::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
+    transition: .6s}
 
-/*Индикаторы слайдера*/
-
-.slider__indicators {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    left: 0;
-    z-index: 15;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    list-style: none;
+.slick-controls-next {
+    right: 0; }
+.slick-controls-prev {
+    left: 0; }
+.slick-controls-next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
-.slider__indicator {
-    position: relative;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 3px;
-    background: rgba(255, 255, 255, .5);
-    margin: 0 3px;
-    cursor: pointer;
-    text-indent: -999px;
-    border-radius: 6px;
+.slick-controls-prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
-.slider__indicator::before {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    display: inline-block;
-    width: 100%;
-    height: 10px;
-    content: "";
+.slick-controls-prev:hover, .slick-controls-next:hover {
+    /*background-color: rgba(0, 0, 0, .2);*/
+    /*opacity: 1;*/
 }
-.slider__indicator::after {
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    display: inline-block;
-    width: 100%;
-    height: 10px;
-    content: "";
+.slick-controls-next:hover.slick-controls-next::before{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    transform: scale(1.5);
 }
-.slider__indicator_active {
-    background: #fff;
+.slick-controls-prev:hover.slick-controls-prev::before{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    transform: scale(1.5);
+}
+.non-padding {
+    padding: 0;
 }

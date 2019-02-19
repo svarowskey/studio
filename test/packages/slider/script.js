@@ -1,7 +1,7 @@
 var slideIndex = 1; //Присваиваем индекс слайда по умолчанию
 var slides = document.getElementsByClassName('mySlides'); //Получаем слайды
 var dots = document.getElementsByClassName('dot'); //Получаем навигационные точки
-var slider = document.getElementsByClassName('slider'); //Получаем контейнер слайдов
+var slider = document.getElementsByClassName('my-slider'); //Получаем контейнер слайдов
 var numberText = document.getElementsByClassName('numberSlide'); //Получаем нумератор слайдов
 var interval;
 showSlides(slideIndex);
