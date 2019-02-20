@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 		  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" href="packages/slider/css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
@@ -133,26 +132,12 @@
 
 <main>
 	<!--Рекламный слайдер-->
-	<div class="container-fluid">
-		<div class="row">
-			<div class="my-slider">
-				<div class="mySlides my-slider-fade">
-					<!--<img src="../images/first-block-bg.jpg">-->
-					<div class="slideInnerBlock slideInnerBlock__right">
-						<!--<div class="slide-content">-->
-						<div class="h1-block">
-							<h1>Натяжные потолки</h1>
-							<h2>Со 100 летней гарантией от 200 руб/м²</h2>
-							<span class="d-flex justify-content-center align-items-center">Дарим подарки!</span>
-							<p>Скидка на каждый 3-й натяжной потолок 20%!<br>Каждый 5-й светильник в подарок!</p>
-						</div>
-						<!--</div>-->
-					</div>
-				</div>
-				<div class="mySlides my-slider-fade">
-					<!--<img src="packages/slider/img/2.jpg">-->
-					<div class="slideInnerBlock slideInnerBlock__left">
-						<div class="h1-block">
+	<div class="container-fluid non-padding">
+		<!--<div class="row">-->
+			<div class="advSlider" id="advSlider">
+				<div>
+					<div class="advSliderSlides__content">
+						<div class="advSliderSlides__content__inner">
 							<h1>Натяжные потолки</h1>
 							<h2>Со 100 летней гарантией от 200 руб/м²</h2>
 							<span class="d-flex justify-content-center align-items-center">Дарим подарки!</span>
@@ -160,10 +145,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="mySlides my-slider-fade">
-					<!--<img src="packages/slider/img/3.jpg">-->
-					<div class="slideInnerBlock slideInnerBlock__right">
-						<div class="h1-block">
+				<div>
+					<div class="advSliderSlides__content">
+						<div class="advSliderSlides__content__inner">
 							<h1>Натяжные потолки</h1>
 							<h2>Со 100 летней гарантией от 200 руб/м²</h2>
 							<span class="d-flex justify-content-center align-items-center">Дарим подарки!</span>
@@ -171,27 +155,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="mySlides my-slider-fade">
-					<!--<img src="packages/slider/img/4.jpg">-->
-					<div class="slideInnerBlock slideInnerBlock__left">
-						<div class="h1-block">
+				<div>
+					<div class="advSliderSlides__content">
+						<div class="advSliderSlides__content__inner">
 							<h1>Натяжные потолки</h1>
 							<h2>Со 100 летней гарантией от 200 руб/м²</h2>
 							<span class="d-flex justify-content-center align-items-center">Дарим подарки!</span>
 							<p>Скидка на каждый 3-й натяжной потолок 20%!<br>Каждый 5-й светильник в подарок!</p>
 						</div>
 					</div>
-				</div>
-				<a class="prev control"></a>
-				<a class="next control"></a>
-				<div class="dots">
-					<span class="dot"></span>
-					<span class="dot"></span>
-					<span class="dot"></span>
-					<span class="dot"></span>
 				</div>
 			</div>
-		</div>
+		<!--</div>-->
 	</div>
 
 	<!--Калькулятор-->
@@ -733,6 +708,5 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
-<script src="packages/slider/script.js"></script>
 </body>
 </html>

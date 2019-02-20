@@ -2148,6 +2148,9 @@ main .kinds .grid .item {
 .slick-controls {
     z-index: 99;
 }
+.slick-slide {
+    height: auto;
+}
 .slick-slide:focus {
     outline: 0 !important;
 }
@@ -2159,10 +2162,13 @@ main .kinds .grid .item {
 }
 .slick-initialized .slick-slide .reviews_slider_container {
     padding: 20px;
+    margin: 20px;
     box-shadow: 0 0 10px 0;
     display: flex;
-    max-width: 840px;
+    height: 96%;
+    max-width: 65%;
     border-radius: 10px;
+    align-content: center;
     align-items: center;
 }
 .reviews_slider_container_text {
@@ -2226,4 +2232,47 @@ main .kinds .grid .item {
 }
 .non-padding {
     padding: 0;
+}
+.advSlider .slick-slide {
+    height: 100%;
+}
+.advSliderSlides__content {
+    display: flex;
+    background: rgba(255, 255, 255, .8);
+    transform: skewX(-30deg);
+    width: 600px;
+    position: absolute;
+    left: 9%;
+    height: 100%;
+}
+.advSliderSlides__content__inner {
+    transform: skewX(30deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+}
+.advSlider .slick-slide:nth-child(1) {
+    background: url("../images/banner_1_1.jpg");
+}
+.advSlider .slick-slide:nth-child(2) {
+    background: url("../images/banner_1_2.jpg");
+}
+.advSlider .slick-slide:nth-child(3) {
+    background: url("../images/banner_1_3.jpg");
+}
+
+/*Media*/
+@media screen and (max-width: 1000px) {
+    .slick-initialized .slick-slide .reviews_slider_container {
+        flex-direction: column;
+    }
+    .reviews_slider_container_text {
+        margin: 20px 20px 0 20px;
+        flex-shrink: 3;
+        text-align: center;
+    }
+    .reviews_slider_container_author {
+        margin-bottom: 20px;
+    }
 }

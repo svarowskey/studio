@@ -201,4 +201,13 @@ $(function() {
         prevArrow: '<div class="slick-prev slick-controls-prev slick-controls"></div>',
 
     });
+    $('#advSlider').slick({
+        autoplay: 'true',
+        nextArrow: '<div class="slick-next slick-controls-next slick-controls"></div>',
+        prevArrow: '<div class="slick-prev slick-controls-prev slick-controls"></div>',
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
 });
