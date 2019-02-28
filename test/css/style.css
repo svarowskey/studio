@@ -2089,7 +2089,17 @@ img.zoom {
 .align-center {
     text-align: center;
 }
-
+.characteristics .item {
+    display: flex;
+    flex-direction: column;
+}
+.characteristics .item .img-block {
+    text-align: center;
+    flex-basis: 60px;
+}
+.characteristics .item .desc {
+    text-align: center;
+}
 .hidden {
     display: none;
 }
@@ -2117,7 +2127,10 @@ img.zoom {
     text-align: center;
     margin-bottom: 6px;
 }
-
+.header-middle .header-tel a {
+    font-size: 22px;
+    color: #1d82bd;
+}
 .header-middle .socials {
     border: 2px solid gray;
     border-radius: 8px;
@@ -2233,8 +2246,12 @@ main .kinds .grid .item {
 .non-padding {
     padding: 0;
 }
+.advSlider .slick-track {
+    height: 320px;
+}
 .advSlider .slick-slide {
     height: 100%;
+    background-size: cover;
 }
 .advSliderSlides__content {
     display: flex;
@@ -2253,16 +2270,26 @@ main .kinds .grid .item {
     padding: 70px;
 }
 .advSlider .slick-slide:nth-child(1) {
-    background: url("../images/banner_1_1.jpg");
+    background-image: url("../images/banner_1_1.jpg");
 }
 .advSlider .slick-slide:nth-child(2) {
-    background: url("../images/banner_1_2.jpg");
+    background-image: url("../images/banner_1_2.jpg");
 }
 .advSlider .slick-slide:nth-child(3) {
-    background: url("../images/banner_1_3.jpg");
+    background-image: url("../images/banner_1_3.jpg");
 }
 
 /*Media*/
+@media screen and (min-width: 1200px) {
+    .characteristics .item .desc h3 {
+        font-size: 19px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .characteristics .item .desc h3 {
+        font-size: 22px;
+    }
+}
 @media screen and (max-width: 1000px) {
     .slick-initialized .slick-slide .reviews_slider_container {
         flex-direction: column;
