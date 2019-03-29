@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@font-face {
+  font-family: SakkalMajalla;
+  src: url(../fonts/SakkalMajallaBold.ttf)
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headerRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+.menu {
+  width: 100%;
+  background: #274092;
+  font-family: Corbel, sans-serif;
+  font-weight: bold;
+}
+.menu__item {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 0;
+}
+.menu__item:hover {
+  text-decoration: none;
+  color: yellow;
+}
+.headerMiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.phone {
+  display: flex;
+  align-items: center;
+}
+.phone_marginBottom {
+  margin-bottom: 12px;
+}
+.phone__icon {
+  display: inline-block;
+  background: url(../images/phone.png);
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+  margin-right: 6px;
+}
+.phone__number {
+  font-family: SakkalMajalla, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #274092;
+  line-height: 36px;
+}
+.phone__number:hover {
+  text-decoration: none;
+  color: red;
+}
+.socialsItem {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #1d82bd;
+  text-align: center;
+  margin: 0 6px;
+}
+.socialsItem:first-child {
+  margin-left: 0;
+}
+.socialsItem:last-child {
+  margin-right: 0;
+}
+.socialsItem__icon {
+  color: #fff;
+  line-height: 30px;
+}
+.socialsItem_vk {
+  background-color: #4c75a3;
+}
+.socialsItem_inst {
+  background-color: #bc2a8d;
+}
+.socialsItem_ok {
+  background-color: #f57d00;
+}
+.socialsItem_f {
+  background-color: #3b5999;
+}
+.socialsItem_wh {
+  background-color: #40c351;
+}
+.socialsItem_vi {
+  background-color: #8f5db7;
+}
+.addressContent {
+  display: flex;
+  align-items: center;
+}
+.addressContent__marker {
+  background: url(../images/marker.png);
+  width: 31px;
+  height: 40px;
+  background-size: contain;
+  margin-right: 16px;
+}
+.addressContent__text {
+  font-family: Corbel, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #274092;
+  line-height: 20px;
+}
