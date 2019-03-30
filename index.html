@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="bower_components/simplelightbox/dist/simplelightbox.min.css">
   <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"-->
         <!--integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="packages/fontawesome-pro/css/all.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
@@ -47,12 +48,10 @@
                 </div>
                 <div class="col-xl-4 headerAddress">
                   <div class="addressContent">
-
                     <div class="addressContent__marker"></div>
                     <span class="addressContent__text">г. Омск, ул.70 Лет Октября, д.20 <br>
                 potolkov@list.ru</span>
                   </div>
-                  <!--<button data-toggle="modal" data-target="#call">Заказать звонок</button>-->
                 </div>
               </div>
 
@@ -74,7 +73,6 @@
                    id="navbarToggleExternalContent">
                 <a class="smoothScroll menu__item" href=".types">Виды потолков</a>
                 <a class="smoothScroll menu__item" href=".design">Дизайн потолков</a>
-                <!--<a class="smoothScroll" href=".texnology">Технологии потолков</a>-->
                 <a class="smoothScroll menu__item" href=".ask">Ответы на вопросы</a>
                 <a class="smoothScroll menu__item" href=".reviews">Отзывы</a>
                 <a class="smoothScroll menu__item" href="footer">Контакты</a>
@@ -139,6 +137,26 @@
       </section>
 
     </section>
+
+    <section class="measure">
+      <div class="container">
+        <div class="row">
+          <div class="measure__title">Закажите бесплатный замер прямо сейчас!</div>
+          <div class="measure-form">
+            <span class="measure-form__title">ВЫЗВАТЬ ЗАМЕРЩИКА</span>
+            <span class="measure-form__subtitle">БЕСПЛАТНО УЖЕ СЕГОДНЯ!</span>
+            <div class="measure-form-blot">
+              <span class="measure-form-blot__text">+ скидки и акции</span>
+            </div>
+            <form method="post" class="measure-form-form">
+              <input type="hidden" class="type" value="zamer2" name="type">
+              <input type="text" name="tel" placeholder="Ваш телефон" required class="measure-form-form__text">
+              <button>Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
@@ -148,6 +166,9 @@
           integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
           crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="bower_components/simplelightbox/dist/simple-lightbox.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
