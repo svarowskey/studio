@@ -8,12 +8,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+.no-padding {
+  padding: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+.transform-scale12 {
+  transition: .6s;
+}
+.transform-scale12:hover {
+  transform: scale(1.2);
+}
 .headerRow {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 14px 0;
+}
+.sectionMain {
+  display: flex;
+  flex-direction: column;
+}
+.sectionMain header {
+  min-height: 138px;
 }
 .menu {
   width: 100%;
@@ -30,6 +49,11 @@
   text-decoration: none;
   color: yellow;
 }
+.headerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .headerMiddle {
   display: flex;
   flex-direction: column;
@@ -38,6 +62,9 @@
 .phone {
   display: flex;
   align-items: center;
+}
+.phone:hover .phone__number {
+  color: red;
 }
 .phone_marginBottom {
   margin-bottom: 12px;
@@ -56,10 +83,6 @@
   font-weight: bold;
   color: #274092;
   line-height: 36px;
-}
-.phone__number:hover {
-  text-decoration: none;
-  color: red;
 }
 .socialsItem {
   display: inline-block;
@@ -103,9 +126,12 @@
 .addressContent {
   display: flex;
   align-items: center;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin-left: auto;
 }
 .addressContent__marker {
-  background: url(../images/marker.png);
+  background: url(../images/marker.png) no-repeat;
   width: 31px;
   height: 40px;
   background-size: contain;
@@ -117,4 +143,131 @@
   font-weight: bold;
   color: #274092;
   line-height: 20px;
+}
+section.sale {
+  height: 799px;
+  padding: 0;
+  flex-grow: 1;
+  position: relative;
+}
+.saleBackImg {
+  background: url(../images/sale-img.jpg) no-repeat;
+  background-size: 100% 90%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.saleBackImgCover {
+  height: 90%;
+  width: 540px;
+  transform: skewX(-30deg);
+  background: rgba(255, 255, 255, .8);
+  position: relative;
+  left: 160px;
+}
+.saleBackImgCover__text {
+  transform: skewX(30deg);
+  display: inline-block;
+  font-family: "Segoe Print", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 0.9px;
+  color: #000000;
+  width: 390px;
+  text-indent: 98px;
+  margin-top: 78px;
+  left: 50px;
+  position: relative;
+}
+.saleMan {
+  background: url(../images/sale-man.png) no-repeat;
+  background-size: contain;
+  width: 336px;
+  height: 685px;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+}
+.saleContent {
+  width: calc(100% - 492px);
+  position: absolute;
+  bottom: 0;
+  left: 492px;
+  z-index: 20;
+}
+.saleContent__line {
+  height: 60px;
+  background: linear-gradient(120deg, transparent 35px, #ffb911 0) top left;
+  margin-left: 98px;
+}
+.saleContentStocks {
+  height: 480px;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(120deg, transparent 360px, rgba(0, 0, 0, .5) 0) top left;
+}
+.saleContentStocks__text {
+  display: block;
+  padding-top: 200px;
+  font-family: "Segoe Print", sans-serif;
+  font-size: 36px;
+  color: red;
+}
+.saleCalc {
+  height: 260px;
+  width: 100%;
+  background: linear-gradient(120deg, transparent 90px, #d5d5d5 0) top left;
+}
+.saleCalcContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.saleCalcContent__title {
+  font-family: Verdana, sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 7.6px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.saleCalcContentBody {
+  margin-top: 30px;
+}
+.saleCalcContentBody__item {
+  display: flex;
+}
+.saleCalcContentBody__item:nth-child(1n + 4) {
+  margin-top: 20px;
+}
+.saleCalcContentBody__item label {
+  flex-grow: 1;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+.saleCalcContentBody__item:last-child label {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  margin: 0;
+  flex-grow: 6.5;
+}
+#price {
+  flex-grow: 1;
+}
+.saleCalcContentBody__item #dotLamps {
+  flex-grow: 2;
+}
+.saleCalcContentBody__item input {
+  width: 80px;
+  text-align: center;
+  border: none;
+}
+.sale__bottom {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  background: #d5d5d5;
+  bottom: 0;
 }
