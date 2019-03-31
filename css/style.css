@@ -700,3 +700,43 @@ section.sale {
     font-family: pneb;
     font-weight: bold;
 }
+footer {
+  background: #003955;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  color: #fff;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__title {
+  font-size: 16px;
+}
+.footer__desc {
+
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-contacts__tel,
+.footer-contacts__mail {
+  color: white;
+}
+.footer-contacts__tel img,
+.footer-contacts__mail img {
+  margin-right: 10px;
+}
+.footer-contacts__tel:hover,
+.footer-contacts__mail:hover {
+  color: white;
+}
+.footer-contacts__tel {
+  font-size: 18px;
+}
+.footer-contacts__mail {
+  font-size: 16px;
+}
