@@ -28,6 +28,10 @@ header nav.stickytop {
   top: 0;
   z-index: 300
 }
+header .header {
+  padding-top: 20px;
+  padding-bottom: 18px
+}
 .headerRow {
   display: flex;
   width: 100%;
@@ -371,7 +375,7 @@ section.sale {
   margin-top: 20px;
 }
 .types {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .types__title {
   text-align: center;
@@ -775,4 +779,10 @@ footer {
 
 .up:hover {
   opacity: 1
+}
+@media (max-width: 767px) {
+nav svg {
+  width: 30px;
+  height: 30px;
+  }
 }
