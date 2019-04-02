@@ -293,7 +293,7 @@ section.sale {
 }
 .measure__title {
   font-family: Verdana, sans-serif;
-  font-size: 46px;
+  font-size: 36px;
   font-weight: bold;
   letter-spacing: 1.2px;
   color: #ffffff;
@@ -313,9 +313,9 @@ section.sale {
   font-family: Verdana, sans-serif;
 }
 .measure-form-blot {
-  background: url("../images/blot.png") no-repeat;
-  width: 335px;
-  height: 63px;
+  background: url(../images/blot.png) no-repeat;
+  width: 280px;
+  background-size: contain;
   text-align: center;
 }
 .measure-form-titleWrap {
@@ -323,31 +323,31 @@ section.sale {
   margin-top: 6px;
 }
 .measure-form-titleWrap__title {
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: 0.8px;
   font-weight: bold;
   line-height: 10px;
 }
 .measure-form-titleWrap__subtitle {
-  font-size: 19.5px;
+  font-size: 18px;
   line-height: 1px;
   font-weight: bold;
 }
 .measure-form-blot__text {
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.6px;
   color: #fcfafa;
-  line-height: 63px;
+  line-height: 53px;
   padding-right: 20px;
 }
 .measure-form-form {
   display: flex;
   flex-direction: column;
-  width: 390px;
+  width: 300px;
 }
 .measure-form-form__text {
   font-family: TrebuchetMS, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #707070;
   line-height: 0.75;
   letter-spacing: 0.6px;
@@ -357,15 +357,15 @@ section.sale {
   border-radius: 10px;
   padding: 10px;
 }
-.measure-form-form__button {
+.button {
   border: solid 0.5px #000000;
   font-family: Verdana, sans-serif;
-  font-size: 24px;
+  font-size: 100%;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.7px;
   color: #020202;
-  line-height: 73px;
+  line-height: 50px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -511,28 +511,8 @@ section.sale {
   z-index: 100;
   display: block
 }
-.ask button {
-  width: 306px;
-  height: 53px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f6d30c), to(#ffe937));
-  background: -webkit-linear-gradient(bottom, #f6d30c 0, #ffe937 100%);
-  background: -o-linear-gradient(bottom, #f6d30c 0, #ffe937 100%);
-  background: linear-gradient(360deg, #f6d30c 0, #ffe937 100%);
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  border: none;
-  -webkit-box-shadow: 0 4px 0 0 #e7ae01;
-  box-shadow: 0 4px 0 0 #e7ae01;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: pnb;
-  margin-top: 20px
-}
-.ask button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f6d30c), to(#ffe937));
-  background: -webkit-linear-gradient(top, #f6d30c 0, #ffe937 100%);
-  background: -o-linear-gradient(top, #f6d30c 0, #ffe937 100%);
-  background: linear-gradient(180deg, #f6d30c 0, #ffe937 100%)
+.ask .button {
+  width: 300px;
 }
 .slick-track {
   height: 260px;
