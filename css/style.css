@@ -54,6 +54,7 @@ header .header {
   background: #274092;
   font-family: Corbel, sans-serif;
   font-weight: bold;
+  border-bottom: 2px solid white;
 }
 .menu__item {
   color: #fff;
