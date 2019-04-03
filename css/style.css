@@ -42,13 +42,6 @@ header .header {
   align-items: center;
   padding: 14px 0;
 }
-.sectionMain {
-  display: flex;
-  flex-direction: column;
-}
-.sectionMain header {
-  min-height: 138px;
-}
 .menu {
   width: 100%;
   background: #274092;
