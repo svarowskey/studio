@@ -377,6 +377,9 @@ section.sale {
   border-radius: 10px;
   background: linear-gradient(#feac06, #fff600, #feac06);
 }
+.button:focus {
+  outline: none;
+}
 .measure-form-form__button_margin-top {
   margin-top: 20px;
 }
@@ -650,6 +653,38 @@ section.sale {
 }
 .characteristics .item .desc {
     text-align: center;
+}
+.make-measure {
+  background: #274092;
+}
+.make-measure-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 360px;
+}
+.make-measure-wrap__title {
+  font-family: Corbel, sans-serif;
+  font-weight: bold;
+  color: #fea906;
+  padding: 0 55px;
+  font-size: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 1.4px;
+}
+.make-measure-wrap__desc {
+  font-family: Corbel, sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.8px;
+  font-size: 24px;
+}
+.make-measure-wrap__button {
+  padding: 0 57px;
 }
 #map {
     width: 100%;
