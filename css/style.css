@@ -154,66 +154,39 @@ header .header {
   line-height: 20px;
 }
 section.sale {
-  height: 799px;
   padding: 0;
   flex-grow: 1;
   position: relative;
 }
 .saleBackImg {
   background: url(../images/sale-img.jpg) no-repeat;
-  background-size: 100% 90%;
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  position: relative;
-}
-.saleBackImgCover {
-  height: 90%;
-  width: 540px;
-  transform: skewX(-30deg);
-  background: rgba(255, 255, 255, .8);
-  position: relative;
-  left: 160px;
-}
-.saleBackImgCover__text {
-  transform: skewX(30deg);
-  display: inline-block;
-  font-family: "Segoe Print", sans-serif;
-  font-size: 36px;
-  font-weight: normal;
-  letter-spacing: 0.9px;
-  color: #000000;
-  width: 390px;
-  text-indent: 98px;
-  margin-top: 78px;
-  left: 50px;
   position: relative;
 }
 .saleMan {
   background: url(../images/sale-man.png) no-repeat;
   background-size: contain;
-  width: 336px;
-  height: 685px;
+  width: 234px;
+  height: 400px;
   position: absolute;
   bottom: 0;
-  left: 80px;
+  left: -58px;
 }
 .saleContent {
-  width: calc(100% - 492px);
-  position: absolute;
-  bottom: 0;
-  left: 492px;
+  position: relative;
   z-index: 20;
 }
 .saleContent__line {
   height: 60px;
-  background: linear-gradient(120deg, transparent 35px, #ffb911 0) top left;
-  margin-left: 98px;
+  background: #ffb911;
 }
 .saleContentStocks {
   height: 480px;
   text-align: center;
   width: 100%;
-  background: linear-gradient(120deg, transparent 360px, rgba(0, 0, 0, .5) 0) top left;
+  background: rgba(0, 0, 0, .5);
 }
 .saleContentStocks__text {
   display: block;
@@ -225,7 +198,7 @@ section.sale {
 .saleCalc {
   height: 260px;
   width: 100%;
-  background: linear-gradient(120deg, transparent 90px, #d5d5d5 0) top left;
+  background: #d5d5d5;
 }
 .saleCalcContent {
   display: flex;

@@ -133,60 +133,58 @@
 </header>
 <main>
   <!--Главная секция-->
-  <section class="sale container-fluid">
-    <div class="saleBackImg">
-      <div class="saleBackImgCover">
-        <span class="saleBackImgCover__text">С уважением к вашему дому</span>
-      </div>
-    </div>
-    <div class="saleContent">
+  <section class="sale container-fluid saleBackImg">
+    <div class="saleContent container">
       <div class="saleContentStocks">
         <span class="saleContentStocks__text">SALE SALE SALE</span>
       </div>
       <div class="saleContent__line"></div>
-      <div class="saleCalc">
-        <div class="saleCalcContent">
-          <span class="saleCalcContent__title">Калькулятор</span>
-          <div class="saleCalcContentBody">
-            <div class="container no-padding">
-              <div class="row">
-                <div class="saleCalcContentBody__item col-xl-4">
-                  <label for="square">Общая площадь потолка (м2):</label>
-                  <input name="square" type="text" id="square" class="calculate-field"
-                         placeholder="0">
-                </div>
-                <div class="saleCalcContentBody__item col-xl-4">
-                  <label for="corners">Кол-во углов:</label>
-                  <input type="text" name="corners" id="corners" class="calculate-field"
-                         placeholder="0">
-                </div>
-                <div class="saleCalcContentBody__item col-xl-4">
-                  <label for="chandeliers">Люстры:</label>
-                  <input type="text" name="chandeliers" id="chandeliers" class="calculate-field"
-                         placeholder="0">
-                </div>
-                <div class="saleCalcContentBody__item col-xl-4">
-                  <label for="dotLamps">Точечные светильники:</label>
-                  <input type="text" name="dotLamps" id="dotLamps" class="calculate-field"
-                         placeholder="0">
-                </div>
-                <div class="saleCalcContentBody__item col-xl-4">
-                  <label for="pipes">Количество труб:</label>
-                  <input type="text" name="pipes" id="pipes" class="calculate-field"
-                         placeholder="0">
-                </div>
-                <div class="saleCalcContentBody__item col-xl-4">
-                  <label for="price">Сумма: </label>
-                  <h3 id="price">0</h3>
-                </div>
+      <div class="saleMan row"></div>
+    </div>
+
+  </section>
+
+  <section class="calc">
+    <div class="saleCalc ">
+      <div class="saleCalcContent container">
+        <span class="saleCalcContent__title row">Калькулятор</span>
+        <div class="saleCalcContentBody">
+          <div class="container no-padding">
+            <div class="row">
+              <div class="saleCalcContentBody__item col-xl-4">
+                <label for="square">Общая площадь потолка (м2):</label>
+                <input name="square" type="text" id="square" class="calculate-field"
+                       placeholder="0">
+              </div>
+              <div class="saleCalcContentBody__item col-xl-4">
+                <label for="corners">Кол-во углов:</label>
+                <input type="text" name="corners" id="corners" class="calculate-field"
+                       placeholder="0">
+              </div>
+              <div class="saleCalcContentBody__item col-xl-4">
+                <label for="chandeliers">Люстры:</label>
+                <input type="text" name="chandeliers" id="chandeliers" class="calculate-field"
+                       placeholder="0">
+              </div>
+              <div class="saleCalcContentBody__item col-xl-4">
+                <label for="dotLamps">Точечные светильники:</label>
+                <input type="text" name="dotLamps" id="dotLamps" class="calculate-field"
+                       placeholder="0">
+              </div>
+              <div class="saleCalcContentBody__item col-xl-4">
+                <label for="pipes">Количество труб:</label>
+                <input type="text" name="pipes" id="pipes" class="calculate-field"
+                       placeholder="0">
+              </div>
+              <div class="saleCalcContentBody__item col-xl-4">
+                <label for="price">Сумма: </label>
+                <h3 id="price">0</h3>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="sale__bottom"></div>
-    <div class="saleMan row"></div>
   </section>
 
   <!--Замер-->
