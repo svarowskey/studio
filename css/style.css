@@ -535,7 +535,7 @@ section.sale {
   width: 300px;
 }
 .slick-track {
-  height: 260px;
+  min-height: 260px;
   display: flex;
 }
 .slick-controls {
