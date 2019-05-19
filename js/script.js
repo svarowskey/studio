@@ -40,19 +40,19 @@ $(function() {
     function init(){
         if( ($(window).width() <= 767)  ) {
             myMap = new ymaps.Map("map", {
-                center: [54.982156, 73.321976],
+                center: [54.988413, 73.383658],
                 zoom: 16
             });
         } else {
             myMap = new ymaps.Map("map", {
-                center: [54.982156, 73.321976],
+                center: [54.988413, 73.383658],
                 zoom: 16
             });
         }
 
-        myPlacemark = new ymaps.Placemark([54.982400, 73.323485], {
+        myPlacemark = new ymaps.Placemark([54.988413, 73.383658], {
             hintContent: 'Омск',
-            balloonContent: 'г. Омск, ул. 70 Лет Октября, д. 20'
+            balloonContent: 'г. Омск, ул. Березовского, д. 19'
         });
         myMap.geoObjects.add(myPlacemark);
     }
