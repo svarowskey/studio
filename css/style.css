@@ -62,6 +62,7 @@ header .header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .headerLogo img {
   width: 220px;
@@ -78,9 +79,6 @@ header .header {
 .phone:hover .phone__number {
   color: red;
 }
-.phone_marginBottom {
-  margin-bottom: 12px;
-}
 .phone__icon {
   display: inline-block;
   background: url(../images/phone.png);
@@ -95,6 +93,9 @@ header .header {
   font-weight: bold;
   color: #274092;
   line-height: 36px;
+}
+.socials:hover {
+  cursor: default;
 }
 .socialsItem {
   display: inline-block;
@@ -990,24 +991,183 @@ footer {
   #map .places-phone__link {
     font-size: 28px;
   }
+  .saleCalc {
+    height: auto;
+  }
+  .saleCalcContentBody .row {
+    margin-bottom: 30px;
+  }
+  .saleCalcContent__title {
+    font-size: 28px;
+    letter-spacing: 5.6px;
+  }
+  .saleCalcContentBody__item {
+    margin-top: 20px;
+  }
+  .saleCalcContentBody__item #dotLamps {
+    flex-grow: unset;
+  }
+  .measure {
+    height: auto;
+    padding: 20px 0 30px;
+  }
+  .measure-form {
+    height: 340px;
+  }
+  .measure__title {
+    font-size: 28px;
+  }
+  .types-footer ul {
+    justify-content: space-evenly;
+  }
+  .types-footer__text {
+    font-size: 16px;
+  }
+  .make-measure-wrap__title {
+    font-size: 32px
+  }
+}
+@media (max-width: 992px) {
+  .footer__title {
+    font-size: 12px;
+  }
+  .footer-contacts__tel {
+    font-size: 12px;
+  }
+  .footer-contacts__mail {
+    font-size: 12px;
+  }
+  #map .places {
+    width: 270px;
+    height: 180px;
+  }
+  #map .places__title {
+    font-size: 26px;
+  }
+  #map .places__address {
+    font-size: 16px;
+  }
+  #map .places-phone__link {
+    font-size: 22px;
+  }
+  #map .places-phone__img {
+    width: 24px;
+  }
 }
 @media (max-width: 767px) {
   nav svg {
     width: 30px;
     height: 30px;
   }
+  .headerMiddle {
+    display: none;
+  }
+  .headerAddress {
+    display: none;
+  }
+  .menu__item {
+    display: block;
+    text-align: center;
+  }
+  .menu__item:nth-child(1n+2) {
+    border-top: 2px solid #ffb911;
+  }
+  .ask {
+    padding: 40px 0;
+  }
+  .ask .ask-blocks2 {
+    margin: 0;
+  }
+  .measure-form {
+    height: 300px;
+  }
+  .measure__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .make-measure-wrap__title {
+    font-size: 28px;
+    padding: 0;
+  }
   #map .places {
-    width: 227px;
+    display: none;
+  }
+  .characteristics .item .img-block img {
+    height: 60px;
+  }
+  .characteristics .item:nth-child(1n+3) {
+    margin-top: 30px;
   }
 }
 @media (max-width: 575px) {
+  .button {
+    font-size: 14px;
+  }
+  .saleCalcContent__title {
+    font-size: 20px;
+  }
+  .saleCalcContentBody__item label {
+    font-size: 15px;
+  }
   .measure-wrap {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
   }
+  .measure__title {
+    font-size: 20px;
+  }
+  .measure-form-titleWrap__title {
+    font-size: 18px;
+  }
+  .measure-form-titleWrap__subtitle {
+    font-size: 14px;
+  }
+  .measure-form {
+    width: 100%;
+  }
+  .measure-form-form {
+    width: 100%;
+  }
+  .measure-form-form__text {
+    font-size: 16px;
+  }
+  .measure-form-blot {
+    width: 230px;
+  }
+  .measure-form-blot__text {
+    font-size: 15px;
+  }
+  .types__title {
+    font-size: 12px;
+  }
+  .types-footer ul {
+    flex-direction: column;
+  }
+  .types-footer__text {
+    font-size: 12px;
+    background-size: 20px;
+  }
+  .characteristics h3 {
+    font-size: 15px;
+  }
+  .characteristics span {
+    font-size: 13px;
+  }
+  .ask .ask-blocks .item h4 {
+    font-size: 18px;
+  }
   .footer-wrap {
     flex-direction: column;
+  }
+  .footer__desc {
+    margin: 24px 0;
+  }
+  .footer-contacts {
+    align-items: center;
+  }
+  .footer-contacts__mail {
+    margin-top: 8px;
   }
 }
 @media (max-width: 361px) {
@@ -1016,5 +1176,8 @@ footer {
   }
   .modal .modal-content {
     padding: 40px 20px 28px
+  }
+  .ask .button {
+    width: 100%;
   }
 }
