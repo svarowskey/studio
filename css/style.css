@@ -198,6 +198,19 @@ section.sale {
   font-size: 36px;
   color: orange;
 }
+#advSlider {
+  height: 100%;
+}
+#advSlider .slick-list,
+#advSlider .slick-list .slick-track{
+  height: inherit;
+}
+#advSlider .slick-list .slick-track .slick-slide,
+#advSlider .slick-list .slick-track .slick-slide .slider-item,
+#advSlider .slick-list .slick-track .slick-slide .slider-item img {
+  height: 100%;
+  width: 100%;
+}
 .saleCalc {
   height: 260px;
   width: 100%;

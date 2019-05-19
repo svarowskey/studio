@@ -154,7 +154,6 @@ $(function() {
         prevArrow: '<div class="slick-prev slick-controls-prev slick-controls"></div>',
         infinite: true,
         speed: 500,
-        fade: true,
         cssEase: 'linear'
     });
 });
