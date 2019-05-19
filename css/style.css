@@ -63,6 +63,9 @@ header .header {
   justify-content: center;
   align-items: center;
 }
+.headerLogo img {
+  width: 220px;
+}
 .headerMiddle {
   display: flex;
   flex-direction: column;
