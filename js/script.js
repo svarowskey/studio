@@ -126,74 +126,21 @@ $(function() {
     });
     new WOW().init();
 
-    var $gallery = $('.gallery .first-type a').simpleLightbox();
-    $gallery.on('show.simplelightbox')
-        .on('shown.simplelightbox')
-        .on('close.simplelightbox')
-        .on('closed.simplelightbox')
-        .on('change.simplelightbox')
-        .on('next.simplelightbox')
-        .on('prev.simplelightbox')
-        .on('nextImageLoaded.simplelightbox')
-        .on('prevImageLoaded.simplelightbox')
-        .on('changed.simplelightbox')
-        .on('nextDone.simplelightbox')
-        .on('prevDone.simplelightbox')
-        .on('error.simplelightbox', function(e){
-            console.log('No image found, go to the next/prev');
-            console.log(e);
-        });
-    var $gallery = $('.gallery .second-type a').simpleLightbox();
-    $gallery.on('show.simplelightbox')
-        .on('shown.simplelightbox')
-        .on('close.simplelightbox')
-        .on('closed.simplelightbox')
-        .on('change.simplelightbox')
-        .on('next.simplelightbox')
-        .on('prev.simplelightbox')
-        .on('nextImageLoaded.simplelightbox')
-        .on('prevImageLoaded.simplelightbox')
-        .on('changed.simplelightbox')
-        .on('nextDone.simplelightbox')
-        .on('prevDone.simplelightbox')
-        .on('error.simplelightbox', function(e){
-            console.log('No image found, go to the next/prev');
-            console.log(e);
-        });
-    var $gallery = $('.gallery .third-type a').simpleLightbox();
-    $gallery.on('show.simplelightbox')
-        .on('shown.simplelightbox')
-        .on('close.simplelightbox')
-        .on('closed.simplelightbox')
-        .on('change.simplelightbox')
-        .on('next.simplelightbox')
-        .on('prev.simplelightbox')
-        .on('nextImageLoaded.simplelightbox')
-        .on('prevImageLoaded.simplelightbox')
-        .on('changed.simplelightbox')
-        .on('nextDone.simplelightbox')
-        .on('prevDone.simplelightbox')
-        .on('error.simplelightbox', function(e){
-            console.log('No image found, go to the next/prev');
-            console.log(e);
-        });
-    var $gallery = $('.gallery .forth-type a').simpleLightbox();
-    $gallery.on('show.simplelightbox')
-        .on('shown.simplelightbox')
-        .on('close.simplelightbox')
-        .on('closed.simplelightbox')
-        .on('change.simplelightbox')
-        .on('next.simplelightbox')
-        .on('prev.simplelightbox')
-        .on('nextImageLoaded.simplelightbox')
-        .on('prevImageLoaded.simplelightbox')
-        .on('changed.simplelightbox')
-        .on('nextDone.simplelightbox')
-        .on('prevDone.simplelightbox')
-        .on('error.simplelightbox', function(e){
-            console.log('No image found, go to the next/prev');
-            console.log(e);
-        });
+    $('.gallery .matt-type a').simpleLightbox();
+
+    $('.gallery .satin-type a').simpleLightbox();
+
+    $('.gallery .glossy-type a').simpleLightbox();
+
+    $('.gallery .photo-type a').simpleLightbox();
+
+    $('.gallery .multi-type a').simpleLightbox();
+
+    $('.gallery .light-type a').simpleLightbox();
+
+    $('.gallery .punch-type a').simpleLightbox();
+
+    $('.gallery .fabric-type a').simpleLightbox();
 
     $('#reviews-slider').slick({
         autoplay: 'true',
