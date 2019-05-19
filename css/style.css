@@ -1014,6 +1014,9 @@ footer {
   .modal .modal-dialog {
     margin-top: 50px
   }
+  .saleContentStocks {
+    height: 380px;
+  }
   #map .places {
     width: 327px;
   }
@@ -1022,6 +1025,10 @@ footer {
   }
   #map .places-phone__link {
     font-size: 28px;
+  }
+  .saleMan {
+    width: 178px;
+    height: 357px;
   }
   .saleCalc {
     height: auto;
@@ -1038,6 +1045,9 @@ footer {
   }
   .saleCalcContentBody__item #dotLamps {
     flex-grow: unset;
+  }
+  .design {
+    display: none;
   }
   .measure {
     height: auto;
@@ -1060,6 +1070,13 @@ footer {
   }
 }
 @media (max-width: 992px) {
+  .saleContent__line {
+    height: 40px;
+  }
+  .saleMan {
+    width: 166px;
+    height: 311px;
+  }
   .footer__title {
     font-size: 12px;
   }
@@ -1104,6 +1121,13 @@ footer {
   .menu__item:nth-child(1n+2) {
     border-top: 2px solid #ffb911;
   }
+  .saleContentStocks {
+    height: 280px;
+  }
+  .saleMan {
+    width: 137px;
+    height: 235px;
+  }
   .ask {
     padding: 40px 0;
   }
@@ -1134,6 +1158,9 @@ footer {
 @media (max-width: 575px) {
   .button {
     font-size: 14px;
+  }
+  .saleMan {
+    left: 0;
   }
   .saleCalcContent__title {
     font-size: 20px;
@@ -1208,6 +1235,9 @@ footer {
   }
   .modal .modal-content {
     padding: 40px 20px 28px
+  }
+  .saleContentStocks {
+    height: 200px;
   }
   .ask .button {
     width: 100%;
