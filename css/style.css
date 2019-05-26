@@ -431,7 +431,17 @@ section.sale {
 }
 
 .sl-overlay {
-  background: #adadad;
+  background: #000;
+}
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-counter,
+.sl-wrapper .sl-navigation button {
+  color: #fff
+}
+.sl-wrapper .sl-image img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .design-wrap__title {
   font-family: Verdana, sans-serif;
