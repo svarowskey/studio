@@ -8,6 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  padding-right: 0 !important;
+}
 .no-padding {
   padding: 0;
 }
@@ -424,7 +427,6 @@ section.sale {
 .sl-image {
   background-color: white;
   border: 2px solid #a1a1a1;
-  padding: 10px;
   border-radius: 10px;
 }
 
