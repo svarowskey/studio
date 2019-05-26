@@ -156,4 +156,9 @@ $(function() {
         speed: 500,
         cssEase: 'linear'
     });
+
+    let slider_height = $('.slider-item img').height();
+    let saleStocks = $('.saleContentStocks');
+    saleStocks.css("height", slider_height + "px");
+
 });
