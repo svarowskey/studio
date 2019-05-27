@@ -467,13 +467,10 @@ section.sale {
   flex-direction: column;
   justify-content: space-between;
 }
-.design-top {
-  margin-top: 20px;
-}
 .design-text-top {
-  font-size: 14px;
+  font-size: 16px;
   display: block;
-  padding: 10px;
+  padding: 25px;
   font-weight: bold;
   margin-bottom: 13px;
 }
@@ -484,8 +481,8 @@ section.sale {
   display: flex;
 }
 .design-images img {
-  height: 200px;
-  width: 290px;
+  height: 242px;
+  object-fit: contain;
 }
 .design-text-right {
   font-size: 13px;
