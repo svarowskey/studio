@@ -161,4 +161,9 @@ $(function() {
     let saleStocks = $('.saleContentStocks');
     saleStocks.css("height", slider_height + "px");
 
+    $('#designSlider').slick({
+        nextArrow: '<div class="slick-next slick-controls-next slick-controls"></div>',
+        prevArrow: '<div class="slick-prev slick-controls-prev slick-controls"></div>',
+        infinite: true,
+    });
 });
