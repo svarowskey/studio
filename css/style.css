@@ -859,6 +859,7 @@ section.sale {
     font-size: 22px;
     font-weight: bold;
     color: #1c1d1e;
+    text-align: center;
 }
 #map .places-phone__link {
     color: #c00;
@@ -1192,9 +1193,6 @@ footer {
   nav svg {
     width: 30px;
     height: 30px;
-  }
-  .headerMiddle {
-    display: none;
   }
   .headerAddress {
     display: none;
