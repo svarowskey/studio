@@ -1,0 +1,94 @@
+/*
+Theme Name: Potolki
+ */
+
+.sale_main {
+	background: url(assets/images/sale-img.jpg) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.elementor-element-36c83b0 .elementor-widget-wrap .elementor-widget.elementor-widget-image-gallery {
+	margin: 0;
+	width: fit-content;
+}
+.elementor-element-36c83b0 .elementor-image-gallery .gallery-item {
+	margin: 0 !important;
+}
+.elementor-element-36c83b0 .elementor-image-gallery .gallery-item a img {
+	width: 100%;
+	border: none !important;
+}
+.elementor-element-36c83b0 .elementor-image-gallery .gallery-item:nth-child(1n+2),
+.elementor-element-36c83b0 .elementor-image-gallery br {
+	display: none;
+}
+.type_ceiling {
+	padding: 9px;
+}
+.type_ceiling .elementor-row {
+	flex-direction: column;
+}
+.type_ceiling .elementor-row .elementor-element.type_ceiling_gallery,
+.type_ceiling .elementor-row .elementor-element.type_ceiling_title {
+	width: 100%;
+}
+.type_ceiling .elementor-row .elementor-element.type_ceiling_gallery .elementor-element-populated {
+	padding: 0;
+}
+.type_ceiling .elementor-row .elementor-element.type_ceiling_title .elementor-element-populated {
+	padding: 0;
+	background: #274092;
+	letter-spacing: 0.8px;
+}
+.type_ceiling .elementor-row .elementor-element.type_ceiling_title .elementor-element-populated .elementor-widget-text-editor p {
+	margin: 0;
+}
+.type_ceiling .elementor-row .elementor-element.type_ceiling_title .elementor-element-populated .elementor-widget-text-editor {
+	max-width: 100%;
+	width: 100%;
+}
+.slider_design .elementor-slick-slider .slick-track .slick-slide .slick-slide-inner {
+	padding: 0;
+}
+.slider_design .elementor-slick-slider .slick-track .slick-slide .slick-slide-inner .elementor-slide-content {
+	max-width: 80%;
+}
+.slider_design .elementor-slick-slider .slick-track .slick-slide .slick-slide-inner .elementor-slide-content .elementor-slide-heading {
+	font-size: 24px;
+	margin: 0;
+	padding: 10px 20px;
+}
+.slider_design .elementor-slick-slider .slick-track .slick-slide .slick-slide-inner .elementor-slide-content .elementor-slide-description {
+	padding: 13px 20px;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 28px;
+}
+.slider_design .elementor-slick-slider .slick-track .slick-slide .slick-slide-inner .elementor-slide-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#slick-slide11 .elementor-slide-content {
+	justify-content: space-between;
+	max-width: 100%;
+}
+#slick-slide11 .elementor-slide-content .elementor-slide-heading {
+	font-size: 24px;
+	margin: 0;
+	padding: 10px 20px;
+}
+#slick-slide11 .elementor-slide-content .elementor-slide-description {
+	padding: 18px 20px;
+}
+#slick-slide12 .elementor-slide-content {
+	max-width: 74%;
+}
+#slick-slide12 .elementor-slide-content .elementor-slide-description {
+	text-align: left;
+	padding: 9px 20px;
+	line-height: 24px;
+}
