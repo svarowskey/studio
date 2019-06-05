@@ -1334,3 +1334,16 @@ footer {
 .elementor-container.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
   padding: 0;
 }
+.elementor-element.elementor-widget.elementor-widget-image-carousel {
+  margin: 0;
+}
+.elementor-column-wrap.elementor-element-populated .elementor-widget-wrap .elementor-widget:not(:last-child) {
+  margin-bottom: 0;
+}
+.elementor-element.types__title.site-line.elementor-widget.elementor-widget-heading {
+  margin: 0;
+}
+.elementor-element .elementor-column-wrap .elementor-widget-wrap .site-line {
+    height: 40px;
+    background-color: #ffb911;
+}
