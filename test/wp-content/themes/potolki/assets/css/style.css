@@ -278,7 +278,7 @@ section.sale {
 }
 .measure {
   background: url(../images/measure-background.png) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
   height: 456px;
   display: flex;
@@ -1095,6 +1095,40 @@ footer {
 .modal .close:hover {
   opacity: .85
 }
+.elementor-element-2eba165::before {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  height: 100%;
+  content: "";
+  background: url(../images/sale-man.png) no-repeat;
+  display: block;
+  background-size: contain;
+  position: absolute;
+}
+
+.characteristic-wrap .elementor-column .elementor-column-wrap .characteristic {
+  width: fit-content;
+  display: flex;
+  padding: 0;
+  max-width: 100%;
+}
+.characteristic-wrap .elementor-column .elementor-column-wrap .characteristic .elementor-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.characteristic-wrap .elementor-column .elementor-column-wrap .characteristic .elementor-inner-column {
+  width: 100%;
+}
+.characteristic-wrap .elementor-column .elementor-column-wrap .characteristic .elementor-inner-column:last-child {
+  margin-top: 10px;
+}
+@media (min-width: 1199px) {
+  .characteristic-wrap .elementor-column .elementor-column-wrap .characteristic .elementor-inner-column h3 {
+    font-size: 22px !important;
+  }
+}
 @media (max-width: 1199px) {
   .success {
     top: 200px
@@ -1155,6 +1189,9 @@ footer {
   }
   .make-measure-wrap__title {
     font-size: 32px
+  }
+  .elementor-element-2eba165::before {
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -1324,11 +1361,33 @@ footer {
   .modal .modal-content {
     padding: 40px 20px 28px
   }
+  .elementor-element.type_ceiling {
+    font-size: 14px;
+  }
   .saleContentStocks {
     height: 200px;
   }
   .ask .button {
     width: 100%;
+  }
+  .slider_design .elementor-element-97cc569 .elementor-slick-slider .slick-slider .slick-slide {
+    height: 450px;
+  }
+  .slider_design .elementor-element-97cc569 .elementor-slick-slider .slick-slider .slick-slide .elementor-slide-content {
+    max-width: 100%;
+  }
+  .slider_design .elementor-element-97cc569 .elementor-slick-slider .slick-slider .slick-slide .elementor-slide-description {
+    background-color: rgba(255, 255, 255, .6);
+  }
+  .characteristic-wrap .elementor-column .elementor-column-wrap .characteristic .elementor-inner-column img {
+    height: 60px !important;
+    width: auto !important;
+  }
+  .characteristic-wrap .elementor-column .elementor-column-wrap .characteristic .elementor-inner-column h3 {
+    font-size: 15px !important;
+  }
+  .characteristic-wrap .elementor-column .elementor-column-wrap .characteristic .elementor-inner-column p {
+    font-size: 10px;
   }
 }
 .elementor-container.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
